@@ -1,4 +1,4 @@
-# First Project 
+# Guessing Game Project
 
 # Setup
 
