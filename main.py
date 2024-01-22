@@ -9,8 +9,8 @@ score = int(0)
 
 #intro
 os.system('clear')
-name = input("Hello, user what is your name? ")
-print("\n Welcome", name, "to this 5 question quiz about the capital city's of countries around the world")
+name = input("Hello,Welcome to the game of finding the capital of countries \n What is your name? ")
+print("\n Welcome", name, " \n This 5 question quiz about the capital city's of countries around the world")
 time.sleep(10)
 os.system('clear')
 
