@@ -12,7 +12,7 @@ name = input("Hello,Welcome to the game of finding the capital of countries \n W
 print("\n Welcome", name, " \n This 5 question quiz about the capital city's of countries around the world")
 
 #Question 1
-q1 = input("Question 1: What is the capital of Turkey? \n a:Ankara \n b:Istanbul \n c:Izmir \n Your answer: \n")
+q1 = input("\n Question 1: What is the capital of Turkey? \n a:Ankara \n b:Istanbul \n c:Izmir \n Your answer: \n")
 if q1.upper () == "A":
   print("Well done! " + q1 + " is correct!")
   score = score + 1
