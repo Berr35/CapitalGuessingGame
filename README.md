@@ -10,4 +10,4 @@
 * After running the code, we enter our username
 * We answer the questions we encounter in the form of (a, b, c).
 
-![792fba52-86e8-48de-ac73-35c1a50843f0](https://github.com/Berr35/newproject/assets/150918206/5417efce-3391-4f55-9f6f-dd428e92d3b6)
+![Opera Anlık Görüntü_2024-01-28_211932_replit com](https://github.com/Berr35/CapitalGuessingGame/assets/150918206/3f223aac-04c6-46eb-84e9-8cb9339de648)
