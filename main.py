@@ -1,76 +1,72 @@
-#setups
-import time
-import os
-stop1 = False
-stop2 = False
-life = (3)
-score = int(0)
-
-
-#intro
-name = input("Hello,Welcome to the game of finding the capital of countries \n What is your name? ")
-print("\n Welcome", name, " \n This 5 question quiz about the capital city's of countries around the world")
-
-#Question 1
-q1 = input("\n Question 1: What is the capital of Turkey? \n a:Ankara \n b:Istanbul \n c:Izmir \n Your answer: \n")
-if q1.upper () == "A":
-  print("Well done! " + q1 + " is correct!")
-  score = score + 1
-  print("Your current score is ", score , " out of 5")
-elif q1.upper() == "B" or "C":
-  print("Sorry but that answer was wrong")
-else:
-  print("Sorry I didn't understand that input.")
-print("----------------------------------------------------")
-
-#Question 2
-q2 = input("Question 2: What is the capital of Poland? \n a:Krakow \n b:Warsaw \n c:Gdansk \n Your answer: \n")
-if q2.upper () == "B":
-  print("Well done you are correct!")
-  score = score + 1
-  print("Your current score is ", score , " out of 5")
-else:
-  print("Sorry but that answer was wrong")
-print("----------------------------------------------------")
-
-#Question 3
-q2 = input("Question 3: What is the capital of Germany? \n a:Hamburg \n b:Berlin \n c:Köln \n Your answer: \n")
-if q2.upper () == "B":
-  print("Well done you are correct!")
-  score = score + 1
-  print("Your current score is ", score , " out of 5")
-else:
-  print("Sorry but that answer was wrong")
-print("----------------------------------------------------")
-
-#Question 4
-q3 = input("Question 4: What is the capital of italy? \n a:Moscow \n b:Rome \n c:Berlin \n Your answer: \n")
-if q3.upper() == "B":
-  print("Well done you are correct!")
-  score = score + 1
-  print("Your current score is ", score , " out of 5")
-else:
-  print("Sorry but that answer was wrong")
-print("----------------------------------------------------")
-
-
-#Question 5
-while stop2 == False:
-  q5 = input("Question 5: What's the capital of the United Kingdom? \n a: London \n b:Portsmouth \n c:Southampton \n  your awnser: \n")
-  if q5.upper() == "A":
-    print("Well done you are correct!")
-    score = score + 1
-    print("Your current score is ", score , " out of 5")
-    stop2 = True
-
-  elif life == 0 :
-    print("Sorry but that answer was wrong")
-    stop2 = True
-
-  elif life >1:
-    life = life - 1
-    print("Sorry but that answer was wrong you have", life ,"reaming")
-print("----------------------------------------------------")
-
-#Total
-print("\n \n Congratulations", name, "your score", score ,"out of 5")
+# Set up
+questions = [
+    {
+        "question": "What is the capital of Turkey?",
+        "options": ["a: Ankara", "b: Istanbul", "c: Izmir"],
+        "answer": "a"
+    },
+    {
+        "question": "What is the capital of Poland?",
+        "options": ["a: Krakow", "b: Warsaw", "c: Gdansk"],
+        "answer": "b"
+    },
+    {
+        "question": "What is the capital of Germany?",
+        "options": ["a: Hamburg", "b: Berlin", "c: Köln"],
+        "answer": "b"
+    },
+    {
+        "question": "What is the capital of Italy?",
+        "options": ["a: Moscow", "b: Rome", "c: Berlin"],
+        "answer": "b"
+    },
+    {
+        "question": "What's the capital of the United Kingdom?",
+        "options": ["a: London", "b: Portsmouth", "c: Southampton"],
+        "answer": "a"
+    },
+    {
+      "question": "What's the capital of the France?",
+      "options": ["a: Marseille", "b: Lyon", "c: Paris"],
+      "answer": "c"
+    }, 
+    {
+      "question": "What's the capital of the Azerbaijan?",
+      "options": ["a: nakhchivan", "b: Baku", "c: Kebele"],
+      "answer": "b"
+    }, 
+    {
+      "question": "What's the capital of the Spain?",
+      "options": ["a: Barcelona", "b: Sevilla", "c: Madrid"],
+      "answer": "c"
+    }, 
+    {
+      "question": "What's the capital of the Belgium?",
+      "options": ["a: Brussels", "b: Ghent", "c: Liège"],
+      "answer": "a"
+    }, 
+    {
+      "question": "What's the capital of the Denmark?",
+      "options": ["a: Odense", "b: Copenhagen", "c: Helsingor"],
+      "answer": "b"
+    }, 
+  ]
+score = 0
+# Intro
+name = input("Hello, Welcome to the game of finding the capital of countries. \nWhat is your name? ")
+print("\nWelcome", name, "\nThis is a 10-question quiz about the capital cities of countries around the world")
+# Questions
+for q in questions:
+    print("\n" + q["question"])
+    for option in q["options"]:
+        print(option)
+    user_answer = input("Your answer: ").upper()
+    if user_answer == q["answer"].upper():
+        print("Well done! " + user_answer + " is correct!")
+        score += 1
+    else:
+        print("Sorry, but that answer was wrong.")
+    print("Your current score is", score, "out of 10")
+    print("----------------------------------------------------")
+# Total
+print("\nCongratulations", name, "your score is", score, "out of 10")
