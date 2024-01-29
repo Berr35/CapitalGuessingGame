@@ -13,4 +13,4 @@
 * After each question you can see whether you got it right or wrong
 * At the end you can find out how many questions are correct
 
-![Opera Anlık Görüntü_2024-01-28_211932_replit com](https://github.com/Berr35/CapitalGuessingGame/assets/150918206/3f223aac-04c6-46eb-84e9-8cb9339de648)
+![Opera Anlık Görüntü_2024-01-29_191046_replit com](https://github.com/Berr35/CapitalGuessingGame/assets/150918206/b83d83f0-a9e2-4058-afa2-919439197e35)
